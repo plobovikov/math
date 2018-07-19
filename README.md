@@ -1,2 +1,2 @@
-# math
-Some math sturctures and numerical methods
+# Some math sturctures and numerical methods
+
