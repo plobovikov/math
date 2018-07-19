@@ -32,10 +32,10 @@ std::uniform_real_distribution<double> generator<double>
                                      ::dis(-10000,10000);
 
 template<>
-struct generator<float> : std_generator<double>{};
+struct generator<float> : generator<double>{};
 
 template<>
-struct std_generator<unsigned int> : base_generator{
+struct generator<unsigned int> : base_generator{
     static std::uniform_int_distribution<unsigned int> dis;
     static unsigned int generate(){
           return dis(gen);
